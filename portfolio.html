@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Nur Qistina · BUT R&T</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav>
+    <a href="#" class="nav-logo" onclick="showPage('home');return false;">✦ Portfolio</a>
+    <ul class="nav-tabs">
+      <li><button class="nav-tab active" data-page="home">Home</button></li>
+      <li><button class="nav-tab" data-page="about">À propos</button></li>
+      <li><button class="nav-tab" data-page="projects">Projets</button></li>
+      <li><button class="nav-tab" data-page="#competences">Compétences</button></li>
+      <li><button class="nav-tab" data-page="#cv">CV</button></li>
+    </ul>
+    <span class="nav-tag">BUT R&T · IUT Nice · 2025–26</span>
+  </nav>
+
+  <!-- ══════════════════════════════
+      PAGE 1 — HOME
+  ══════════════════════════════ -->
+  <div class="page active" id="page-home">
+    <div class="page-content home-content">
+      <div class="home-row">
+        <div class="home-left">
+          <div class="home-greeting">Bonjour, je suis</div>
+          <h1 class="hero-name">
+            Nur Qistina
+            <span class="line2">BINTI MOHD RODZI</span>
+          </h1>
+          <p class="hero-desc">
+            Étudiante internationale originaire de <strong>Malaisie</strong>
+            et actuellement en
+            <strong>BUT1 Réseaux & Télécommunications</strong>
+            à l’IUT Nice Côte d’Azur,
+            je m’intéresse particulièrement à la
+            cybersécurité, aux réseaux informatiques
+            et aux systèmes connectés.
+
+            J’aime relever des défis techniques,
+            apprendre de nouvelles technologies
+            et participer à des projets innovants.
+          </p>
+          <div class="hero-pills">
+            <span class="pill pill-purple">🌐 Réseaux</span>
+            <span class="pill pill-mint">🔒 Cybersécurité</span>
+            <span class="pill pill-blush">💻 Développement</span>
+            <span class="pill pill-sky">📡 Télécoms</span>
+          </div>
+          <div class="hero-ctas">
+            <button class="btn btn-purple" onclick="showPage('projects')">Voir mes projets →</button>
+            <button class="btn btn-outline" onclick="showPage('cv')">Mon CV</button>
+          </div>
+          <div class="home-stats">
+            <div class="stat">
+              <div class="stat-num">1<span style="font-size:1.2rem;color:var(--text-soft);">ère</span></div>
+              <div class="stat-label">année BUT R&T</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">projets SAÉ réalisés</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">compétences BUT maîtrisées</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badge card -->
+        <div class="badge-wrap">
+          <div class="hero-photo-section">
+
+            <!-- Pink background circle -->
+            <div class="photo-circle"></div>
+
+            <!-- Decorative small circle -->
+            <div class="small-circle"></div>
+
+            <!-- Decorative dots -->
+            <div class="dot-grid"></div>
+
+            <!-- Your photo -->
+            <img src="me.png" alt="Nur Qistina" class="hero-photo">
+
+          </div>
+          <div class="badge-lanyard"></div>
+          <div class="badge-card">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <a href="mailto:votre.email@exemple.com"><span>✉️</span> nurqistinamohdrodzi@gmail.com</a>
+          <a href="https://linkedin.com" target="_blank"><span>💼</span> linkedin.com/in/qistinaRodzi</a>
+          <a href="https://github.com" target="_blank"><span>🐙</span> github.com/qstn06</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-quick-form">
+          <p>✦ Envoyer un message rapide</p>
+          <div class="footer-form-row">
+            <input type="email" placeholder="Votre email">
+            <input type="text" placeholder="Message court…">
+            <button class="footer-send">Envoyer</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">© 2026 · Nur Qistina BINTI MOHD RODZI · BUT R&T · IUT Nice Côte d'Azur · Sophia Antipolis</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+      PAGE 2 — À PROPOS
+  ══════════════════════════════ -->
+  <div class="page" id="page-about">
+    <div class="page-content about-layout">
+      <div class="about-main">
+        <div class="section-tag">// À propos</div>
+        <h2 class="page-title">Qui suis-<span class="accent">je</span> ?</h2>
+        <p>
+          Originaire de <strong>Malaisie</strong>, j’ai d’abord suivi une année de
+          programme préparatoire afin de renforcer mes bases académiques et de
+          mieux préparer mon projet d’études à l’international.
+        </p>
+
+        <p>
+          En septembre 2025, j’ai choisi de poursuivre mes études en France en
+          intégrant le <strong>BUT Réseaux et Télécommunications</strong> à l’IUT Nice Côte d’Azur,
+          un domaine qui correspond à mon intérêt pour les réseaux,
+          les systèmes et la cybersécurité.
+        </p>
+
+        <p>
+          Au cours de ma formation, je développe des compétences en
+          <strong>administration Linux</strong>,
+          <strong>programmation web</strong>,
+          <strong>réseaux informatiques</strong>
+          et <strong>cybersécurité</strong>.
+        </p>
+
+        <p>
+          J’ai également participé à plusieurs projets académiques,
+          notamment le développement d’un système connecté utilisant un
+          <strong>Raspberry Pi</strong>, des capteurs et une interface web locale,
+          ainsi que des projets autour des technologies
+          <strong>LoRa</strong> et de la transmission de données.
+        </p>
+
+        <p>
+          Ces expériences me permettent d’améliorer ma capacité à
+          travailler en équipe, résoudre des problèmes techniques
+          et concevoir des solutions concrètes.
+        </p>
+
+        <p>
+          Je m’intéresse particulièrement à la cybersécurité,
+          à la sécurisation des infrastructures réseau et aux technologies innovantes
+          permettant de protéger les systèmes et les communications.
+        </p>
+
+        <p>
+          Curieuse, autonome et sociable, j’aime également voyager,
+          découvrir de nouvelles cultures et relever de nouveaux défis.
+          Ces expériences renforcent mon ouverture d’esprit,
+          mon adaptabilité et mon sens de la collaboration.
+        </p>
+
+        <p>
+          À long terme, je souhaite contribuer au développement
+          de solutions technologiques intelligentes, sécurisées et utiles au quotidien.
+          Mon objectif est de mettre mes compétences en réseaux et en cybersécurité
+          au service de projets innovants ayant un impact positif
+          sur la société et les générations futures.
+        </p>
+
+        <div class="about-detail-row">
+          <div class="detail-card">
+            <h5>📍 Parcours académique</h5>
+            <p>
+              <strong>2025 — Présent</strong><br>
+              BUT Réseaux & Télécommunications — BUT1<br>
+              IUT Nice Côte d'Azur · Sophia Antipolis · France
+
+              <br><br>
+
+              <strong>2024 — 2025</strong><br>
+              Programme préparatoire à la poursuite d’études en France<br>
+              Universiti Kuala Lumpur – Malaysia France Institute (UniKL MFI)
+
+              <br><br>
+
+              <strong>2022 — 2023</strong><br>
+              Sijil Pelajaran Malaysia (SPM)<br>
+              SMK Raja Chulan,Ipoh
+              </p>
+          </div>
+          <div class="detail-card">
+            <h5>🛠 Outils & Logiciels</h5>
+            <div class="pills-row">
+              <span class="pill pill-purple">Cisco Packet Tracer</span>
+              <span class="pill pill-mint">GNS3</span>
+              <span class="pill pill-mint">Linux</span>
+              <span class="pill pill-blush">Python</span>
+              <span class="pill pill-blush">HTML/CSS</span>
+              <span class="pill pill-sky">Wireshark</span>
+              <span class="pill pill-butter">Git</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <h5>🎯 Centres d'intérêt</h5>
+            <div class="pills-row">
+              <span class="pill pill-purple">Cybersécurité</span>
+              <span class="pill pill-mint">Open Source</span>
+              <span class="pill pill-blush">Series</span>
+              <span class="pill pill-sky">Musique</span>
+              <span class="pill pill-butter">Sport</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-sidebar">
+        <div class="sidebar-block">
+          <h4>Logiciels</h4>
+          <div class="sw-grid">
+            <div class="sw-item"><div class="icon">🖥</div>Packet Tracer</div>
+            <div class="sw-item"><div class="icon">🌐</div>GNS3</div>
+            <div class="sw-item"><div class="icon">🐍</div>Python</div>
+            <div class="sw-item"><div class="icon">🐧</div>Linux</div>
+            <div class="sw-item"><div class="icon">🔍</div>Wireshark</div>
+            <div class="sw-item"><div class="icon">💻</div>VS Code</div>
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <h4>Langues</h4>
+          <div class="lang-item">
+            <div class="lang-top">
+                <span>Malay</span>
+                <span>Natif</span>
+            </div>
+            <div class="lang-bar">
+                <div class="lang-progress progress-full"></div>
+            </div>
+        </div>
+        <div class="lang-item">
+            <div class="lang-top">
+                <span>Anglais</span>
+                <span>B2 (CEFR)</span>
+            </div>
+            <div class="lang-bar">
+                <div class="lang-progress progress-b2"></div>
+            </div>
+        </div>
+        <div class="lang-item">
+            <div class="lang-top">
+                <span>Français</span>
+                <span>DELF B2</span>
+            </div>
+            <div class="lang-bar">
+                <div class="lang-progress progress-b2-light"></div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <a href="mailto:votre.email@exemple.com"><span>✉️</span> nurqistinamohdrodzi@gmail.com</a>
+          <a href="https://linkedin.com" target="_blank"><span>💼</span> linkedin.com/in/qistinaRodzi</a>
+          <a href="https://github.com" target="_blank"><span>🐙</span> github.com/qstn06</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-quick-form">
+          <p>✦ Une question ? Envoyez un message</p>
+          <div class="footer-form-row">
+            <input type="email" placeholder="Votre email">
+            <input type="text" placeholder="Votre message…">
+            <button class="footer-send">Envoyer</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">© 2026 · Nur Qistina BINTI MOHD RODZI · BUT R&T · IUT Nice Côte d'Azur · Sophia Antipolis</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+      PAGE 3 — PROJETS
+  ══════════════════════════════ -->
+  <div class="page" id="page-projects">
+    <div class="page-content projects-layout">
+      <div class="proj-header">
+        <div>
+          <div class="section-tag">// Réalisations</div>
+          <h2 class="page-title">Mes <span class="accent">Projets</span></h2>
+        </div>
+        <div class="proj-filters">
+          <button class="filter-btn active">Tous</button>
+          <button class="filter-btn">Réseaux</button>
+          <button class="filter-btn">Cybersécurité</button>
+          <button class="filter-btn">Dev</button>
+        </div>
+      </div>
+
+      <div class="proj-grid">
+
+        <!-- Projet 1 -->
+        <div class="proj-card wide">
+
+          <div class="proj-thumb thumb-lavender">
+            <span class="proj-num">01</span>
+
+            <div class="proj-thumb-icon">🖧</div>
+
+            <div class="proj-thumb-ph">
+              SAÉ12 · Analyse réseau
+            </div>
+          </div>
+
+          <div class="proj-body">
+
+            <div class="proj-tags">
+              <span class="pill pill-purple">Réseaux</span>
+              <span class="pill pill-sky">SAÉ12</span>
+            </div>
+
+            <div class="proj-title">
+              Découverte et analyse d’un réseau informatique
+            </div>
+
+            <div class="proj-desc">
+
+              <strong>Objectif :</strong><br>
+              Découvrir le fonctionnement d’un réseau domestique et comprendre les interactions entre les équipements réseau.
+
+              <br><br>
+
+              <strong>Missions réalisées :</strong><br>
+              • Analyse des paramètres IP et DNS<br>
+              • Identification des équipements réseau<br>
+              • Réalisation d’un schéma réseau<br>
+              • Analyse de trafic avec Wireshark<br>
+              • Utilisation de traceroute et étude des paquets réseau<br>
+              • Étude de la consommation énergétique des équipements
+
+              <br><br>
+
+              <strong>Technologies utilisées :</strong><br>
+              Wireshark · Traceroute · diagrams.net · DHCP · DNS · Linux · Windows
+
+              <br><br>
+
+              <strong>Preuves / Résultats :</strong><br>
+              Captures d’écran annotées, schéma réseau détaillé et analyse du trafic Internet.
+            </div>
+
+            <div class="proj-meta">
+              <div class="proj-techs">
+                Wireshark · Réseau · Analyse IP
+              </div>
+
+              <div class="proj-arrow">→</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="proj-card">
+
+          <div class="proj-thumb thumb-mint">
+            <span class="proj-num">02</span>
+
+            <div class="proj-thumb-icon">🗣️</div>
+
+            <div class="proj-thumb-ph">
+              R111 · Communication interculturelle
+            </div>
+          </div>
+
+          <div class="proj-body">
+
+            <div class="proj-tags">
+              <span class="pill pill-mint">Communication</span>
+              <span class="pill pill-sky">Présentation orale</span>
+            </div>
+
+            <div class="proj-title">
+              La vie à la française — Communication interculturelle
+            </div>
+
+            <div class="proj-desc">
+
+              <strong>Objectif du projet :</strong><br>
+              Comprendre les différences culturelles entre la France et la Malaisie
+              autour du rapport au temps, des habitudes quotidiennes
+              et de la vie « à la française ».
+
+              <br><br>
+
+              <strong>Missions réalisées :</strong><br>
+              • Analyse du document de référence R111<br>
+              • Recherche et comparaison culturelle France/Malaisie<br>
+              • Travail collaboratif en binôme<br>
+              • Création d’un diaporama de présentation<br>
+              • Préparation et présentation orale devant la classe
+
+              <br><br>
+
+              <strong>Technologies / Outils :</strong><br>
+              Canva · PowerPoint · Recherche documentaire · Communication orale
+
+              <br><br>
+
+              <strong>Aperçu / Résultat :</strong><br>
+              Réalisation d’une présentation intitulée
+              <em>« La pause déjeuner en France et en Malaisie »</em>,
+              comparant les différences et ressemblances des habitudes
+              de pause déjeuner dans les deux pays.
+            </div>
+
+            <div class="proj-meta">
+
+              <div class="proj-techs">
+                Canva · Oral · Travail d’équipe · Culture
+              </div>
+
+              <div class="proj-arrow">→</div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!--Projet 3
+        <div class="proj-card">
+          <div class="proj-thumb thumb-blush">
+            <span class="proj-num">03</span>
+            <div class="proj-thumb-icon">💻</div>
+            <div class="proj-thumb-ph">[ Aperçu site web ]</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="pill pill-blush">Développement</span>
+              <span class="pill pill-sky">SAÉ 1.05</span>
+            </div>
+            <div class="proj-title">Publication de Données Web</div>
+            <div class="proj-desc">Collecte, traitement et publication de données structurées sur un serveur distant via script automatisé.</div>
+            <div class="proj-meta">
+              <div class="proj-techs">HTML · Python · Markdown</div>
+              <div class="proj-arrow">→</div>
+            </div>
+          </div>
+        </div>
+      -->
+
+        <!-- Projet 4 — wide 
+        <div class="proj-card wide">
+          <div class="proj-thumb thumb-butter">
+            <span class="proj-num">04</span>
+            <div class="proj-thumb-icon">📡</div>
+            <div class="proj-thumb-ph">[ Schéma / Documentation ]</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="pill pill-butter">Télécoms</span>
+              <span class="pill pill-purple">Personnel</span>
+            </div>
+            <div class="proj-title">Projet Personnel — [À compléter]</div>
+            <div class="proj-desc">Décrivez ici un projet personnel ou de curiosité. Les projets perso sont particulièrement appréciés des recruteurs.</div>
+            <div class="proj-meta">
+              <div class="proj-techs">Technologies à compléter</div>
+              <div class="proj-arrow">→</div>
+            </div>
+          </div>
+        </div>
+      -->
+
+        <!-- Projet 5 
+        <div class="proj-card">
+          <div class="proj-thumb thumb-sky">
+            <span class="proj-num">05</span>
+            <div class="proj-thumb-icon">📄</div>
+            <div class="proj-thumb-ph">[ Rapport / Présentation ]</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="pill pill-sky">Communication</span>
+            </div>
+            <div class="proj-title">Autre Projet — [À compléter]</div>
+            <div class="proj-desc">SAÉ, TP remarquable, collaboration… à vous de remplir avec une réalisation qui vous tient à cœur.</div>
+            <div class="proj-meta">
+              <div class="proj-techs">Outils à compléter</div>
+              <div class="proj-arrow">→</div>
+            </div>
+          </div>
+        </div>
+      -->
+
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <a href="mailto:votre.email@exemple.com"><span>✉️</span> nurqistinamohdrodzi@gmail.com</a>
+          <a href="https://linkedin.com" target="_blank"><span>💼</span> linkedin.com/in/qistinaRodzi</a>
+          <a href="https://github.com" target="_blank"><span>🐙</span> github.com/qstn06</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-quick-form">
+          <p>✦ Un projet ensemble ? Contactez-moi</p>
+          <div class="footer-form-row">
+            <input type="email" placeholder="Votre email">
+            <input type="text" placeholder="Votre message…">
+            <button class="footer-send">Envoyer</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">© 2026 · Nur Qistina BINTI MOHD RODZI · BUT R&T · IUT Nice Côte d'Azur · Sophia Antipolis</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+      PAGE 4 — COMPÉTENCES
+  ══════════════════════════════ -->
+  <div class="page" id="page-competences">
+    <div class="page-content comp-layout">
+      <div class="comp-intro">
+        <div class="section-tag">// Compétences BUT R&T</div>
+        <h2 class="page-title">Mes <span class="accent">Compétences</span></h2>
+        <p>Les trois compétences officielles du BUT R&T, développées à travers les cours, travaux pratiques et SAÉ réalisées depuis le début de ma formation.</p>
+      </div>
+
+      <div class="comp-grid">
+
+        <div class="comp-card">
+          <div class="comp-icon" style="background:rgba(155,137,212,0.15);">🌐</div>
+          <h4>RT1 — Administrer les réseaux et l'Internet</h4>
+          <p>Configuration LAN/WAN, routage IP, adressage statique et DHCP, déploiement d'équipements actifs (switches, routeurs).</p>
+          <div class="prog-list">
+            <div>
+              <div class="prog-label"><span>Configuration LAN</span><span>55%</span></div>
+              <div class="prog-bar"><div class="prog-fill fill-a" style="width:55%"></div></div>
+            </div>
+            <div>
+              <div class="prog-label"><span>Routage IP</span><span>45%</span></div>
+              <div class="prog-bar"><div class="prog-fill fill-a" style="width:45%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-icon" style="background:rgba(198,186,222,0.15);">📡</div>
+          <h4>RT2 — Connecter entreprises et usagers</h4>
+          <p>Services réseau (DNS, DHCP, Web), ToIP, mise en place de l'environnement professionnel, collaboration en mode projet.</p>
+          <div class="prog-list">
+            <div>
+              <div class="prog-label"><span>Services réseau</span><span>50%</span></div>
+              <div class="prog-bar"><div class="prog-fill fill-b" style="width:50%"></div></div>
+            </div>
+            <div>
+              <div class="prog-label"><span>ToIP & Téléphonie</span><span>35%</span></div>
+              <div class="prog-bar"><div class="prog-fill fill-b" style="width:35%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-icon" style="background:rgba(232,160,175,0.15);">💻</div>
+          <h4>RT3 — Créer des outils et applications</h4>
+          <p>Scripting Python, développement web, traitement de données, publication sur serveur, automatisation de déploiement.</p>
+          <div class="prog-list">
+            <div>
+              <div class="prog-label"><span>Python / Scripting</span><span>60%</span></div>
+              <div class="prog-bar"><div class="prog-fill fill-c" style="width:60%"></div></div>
+            </div>
+            <div>
+              <div class="prog-label"><span>HTML / CSS / Web</span><span>65%</span></div>
+              <div class="prog-bar"><div class="prog-fill fill-c" style="width:65%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-icon" style="background:rgba(137,187,212,0.15);">🔒</div>
+          <h4>Cybersécurité</h4>
+          <p>Analyse de vulnérabilités, capture et décodage de trames réseau, identification des risques, bonnes pratiques de sécurité.</p>
+          <div class="pills-row" style="margin-top:12px;">
+            <span class="pill pill-sky">Wireshark</span>
+            <span class="pill pill-sky">Kali Linux</span>
+            <span class="pill pill-sky">Scapy</span>
+          </div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-icon" style="background:rgba(232,201,122,0.15);">🗣</div>
+          <h4>Communication & Documentation</h4>
+          <p>Rédaction de rapports techniques, présentation orale, documentation de projets, travail collaboratif en équipe.</p>
+          <div class="pills-row" style="margin-top:12px;">
+            <span class="pill pill-butter">Markdown</span>
+            <span class="pill pill-butter">Rapport PDF</span>
+            <span class="pill pill-butter">Diaporama</span>
+          </div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-icon" style="background:rgba(196,168,232,0.15);">🤝</div>
+          <h4>Travail en équipe & Gestion de projet</h4>
+          <p>Collaboration sur les SAÉ, prise d'initiative, respect des délais, outils de versionnage et partage de code.</p>
+          <div class="pills-row" style="margin-top:12px;">
+            <span class="pill pill-purple">Git / GitHub</span>
+            <span class="pill pill-purple">Trello</span>
+            <span class="pill pill-purple">Notion</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <a href="mailto:votre.email@exemple.com"><span>✉️</span> nurqistinamohdrodzi@gmail.com</a>
+          <a href="https://linkedin.com" target="_blank"><span>💼</span> linkedin.com/in/qistinaRodzi</a>
+          <a href="https://github.com" target="_blank"><span>🐙</span> github.com/qstn06</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-quick-form">
+          <p>✦ Discutons de vos besoins</p>
+          <div class="footer-form-row">
+            <input type="email" placeholder="Votre email">
+            <input type="text" placeholder="Votre message…">
+            <button class="footer-send">Envoyer</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">© 2026 · Nur Qistina BINTI MOHD RODZI · BUT R&T · IUT Nice Côte d'Azur · Sophia Antipolis</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+      PAGE 5 — CV
+  ══════════════════════════════ -->
+  <div class="page" id="page-cv">
+    <div class="page-content cv-layout">
+      <div class="cv-sidebar">
+        <div class="cv-profile-card">
+          <div class="cv-avatar">P·N</div>
+          <div class="cv-profile-name">Prénom NOM</div>
+          <div class="cv-profile-role">Étudiant BUT R&T — IUT Nice</div>
+          <div class="cv-contact-list">
+            <a href="mailto:nurqistinamohdrodzi@gmail.com">✉️ nurqistinamohdrodzi@gmail.com</a>
+            <a href="#">📞 +33 7 49 94 76 49</a>
+            <a href="#" target="_blank">💼 linkedin.com/in/qistinaRodzi</a>
+            <a href="#" target="_blank">🐙 github.com/qstn06</a>
+            <a href="#">📍 Sophia Antipolis, France</a>
+          </div>
+        </div>
+        <div class="cv-dl-card">
+          <h4>📄 Télécharger mon CV</h4>
+          <p>Version PDF complète, protégée contre l'usurpation d'identité</p>
+          <a href="#" class="btn-white">Télécharger ↓</a>
+        </div>
+      </div>
+
+      <div class="cv-main">
+        <div class="cv-section">
+          <div class="section-tag">// Mon parcours</div>
+          <h2 class="page-title" style="font-size:2.2rem;">Curriculum <span class="accent">Vitæ</span></h2>
+        </div>
+
+        <div class="cv-section">
+          <h3>🎓 Formation</h3>
+          <div class="cv-item">
+            <div class="cv-date">2025 — Présent</div>
+            <div class="cv-role">BUT Réseaux & Télécommunications — BUT1</div>
+            <div class="cv-org">IUT Nice Côte d'Azur · Site de Sophia Antipolis</div>
+            <div class="cv-detail">Formation universitaire technologique : réseaux, télécommunications, programmation, cybersécurité. Projets SAÉ en équipe.</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-date">[Année]</div>
+            <div class="cv-role">Baccalauréat [Série] — [Mention]</div>
+            <div class="cv-org">[Lycée] · [Ville]</div>
+            <div class="cv-detail">Spécialités : [NSI / Maths / Physique…]. [Mention à compléter].</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-date">[Année — optionnel]</div>
+            <div class="cv-role">Certification / Formation complémentaire</div>
+            <div class="cv-org">[Organisme]</div>
+            <div class="cv-detail">[Description de la certification ou formation]</div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h3>💼 Expériences</h3>
+          <div class="cv-item">
+            <div class="cv-date">[Période]</div>
+            <div class="cv-role">Stage / Job — [Titre du poste]</div>
+            <div class="cv-org">[Entreprise] · [Lieu]</div>
+            <div class="cv-detail">Description de la mission, outils utilisés, apprentissages clés.</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-date">[Période]</div>
+            <div class="cv-role">Activité associative ou bénévolat</div>
+            <div class="cv-org">[Association / Structure]</div>
+            <div class="cv-detail">Description de votre engagement et des compétences développées.</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-date">[Période]</div>
+            <div class="cv-role">Projet personnel ou auto-formation</div>
+            <div class="cv-org">Initiative personnelle</div>
+            <div class="cv-detail">Un projet mené par curiosité ou intérêt, témoignant de votre autonomie.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <a href="mailto:votre.email@exemple.com"><span>✉️</span> nurqistinamohdrodzi@gmail.com</a>
+          <a href="https://linkedin.com" target="_blank"><span>💼</span> linkedin.com/in/qistinaRodzi</a>
+          <a href="https://github.com" target="_blank"><span>🐙</span> github.com/qstn06</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-quick-form">
+          <p>✦ Je suis disponible, envoyez un message</p>
+          <div class="footer-form-row">
+            <input type="email" placeholder="Votre email">
+            <input type="text" placeholder="Votre message…">
+            <button class="footer-send">Envoyer</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">© 2026 · Nur Qistina BINTI MOHD RODZI · BUT R&T · IUT Nice Côte d'Azur · Sophia Antipolis</div>
+    </div>
+  </div>
+
+  <!-- ══ SCRIPTS ══ -->
+  <script>
+  // ── Custom cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx=0, my=0, rx=0, ry=0;
+  document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; });
+  (function animCursor(){
+    cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+    rx += (mx-rx)*0.14; ry += (my-ry)*0.14;
+    ring.style.left=rx+'px'; ring.style.top=ry+'px';
+    requestAnimationFrame(animCursor);
+  })();
+  document.querySelectorAll('a,button,.proj-card,.comp-card,.detail-card').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ cursor.style.transform='translate(-50%,-50%) scale(2)'; ring.style.transform='translate(-50%,-50%) scale(1.4)'; });
+    el.addEventListener('mouseleave',()=>{ cursor.style.transform='translate(-50%,-50%) scale(1)'; ring.style.transform='translate(-50%,-50%) scale(1)'; });
+  });
+
+  // ── Page navigation
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    const pg = document.getElementById('page-'+id);
+    if(pg) { pg.classList.add('active'); window.scrollTo(0,0); }
+    document.querySelectorAll('.nav-tab').forEach(t => {
+      if(t.dataset.page===id) t.classList.add('active');
+    });
+  }
+
+  document.querySelectorAll('.nav-tab').forEach(tab=>{
+    tab.addEventListener('click', ()=> showPage(tab.dataset.page));
+  });
+
+  // ── Filter buttons (projects page)
+  document.querySelectorAll('.filter-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  // ── Animate progress bars when competences page is shown
+  const compTab = document.querySelector('[data-page="competences"]');
+  if(compTab) {
+    compTab.addEventListener('click', ()=>{
+      setTimeout(()=>{
+        document.querySelectorAll('.prog-fill').forEach(bar=>{
+          const w = bar.style.width;
+          bar.style.width = '0';
+          requestAnimationFrame(()=>{ bar.style.width = w; });
+        });
+      }, 50);
+    });
+  }
+  </script>
+</body>
+</html>

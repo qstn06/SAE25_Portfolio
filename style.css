@@ -287,7 +287,9 @@ nav {
   display: grid; grid-template-columns: 1fr auto;
   gap: 48px; align-items: center;
 }
-.home-left { max-width: 640px; }
+.home-left { 
+   max-width: 560px;
+}
 
 .home-greeting {
   font-family: 'DM Mono', monospace; font-size: 0.75rem;
@@ -303,23 +305,28 @@ nav {
 .hero-name {
   font-family: 'Syne', sans-serif;
   font-weight: 800;
-  font-size: clamp(2.8rem, 6vw, 5rem);
-  line-height: 1;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
   color: var(--text);
+  max-width: 520px;
 }
 .hero-name .line2 {
-  color: transparent;
-  -webkit-text-stroke: 2.5px var(--purple);
   display: block;
-  font-size: 0.75em;
+  margin-top: 8px;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--purple);
+  font-size: 0.62em;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
 }
 
-
-
 .hero-desc {
-  margin-top: 28px; max-width: 460px;
-  font-size: 1rem; font-weight: 300; line-height: 1.75;
+  margin-top: 28px; 
+   max-width: 520px;
+   font-size: 1rem; 
+   font-weight: 300; 
+   line-height: 1.75;
   color: var(--text-mid);
 }
 .hero-desc strong { color: var(--text); font-weight: 600; }

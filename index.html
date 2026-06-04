@@ -334,7 +334,7 @@
       <div class="proj-grid">
 
         <!-- Projet 1 -->
-        <div class="proj-card wide" data-category="reseaux">
+        <div class="proj-card" data-category="reseaux">
 
           <div class="proj-thumb thumb-lavender">
             <img src="sae12.png" class="proj-image" alt="Projet SAÉ12">
@@ -356,41 +356,66 @@
               <strong>Objectif :</strong><br>
               Découvrir le fonctionnement d’un réseau domestique et comprendre les interactions entre les équipements réseau.
 
-              <br><br>
+              <div class="proj-more">
 
-              <strong>Missions réalisées :</strong><br>
-              • Analyse des paramètres IP et DNS<br>
-              • Identification des équipements réseau<br>
-              • Réalisation d’un schéma réseau<br>
-              • Analyse de trafic avec Wireshark<br>
-              • Utilisation de traceroute et étude des paquets réseau<br>
-              • Étude de la consommation énergétique des équipements
+                <br>
 
-              <br><br>
+                <strong>Missions réalisées :</strong><br>
+                • Analyse des paramètres IP et DNS<br>
+                • Identification des équipements réseau<br>
+                • Réalisation d’un schéma réseau<br>
+                • Analyse de trafic avec Wireshark<br>
+                • Utilisation de traceroute et étude des paquets réseau<br>
+                • Étude de la consommation énergétique des équipements
 
-              <strong>Technologies utilisées :</strong><br>
-              Wireshark · Traceroute · diagrams.net · DHCP · DNS · Linux · Windows
+                <br><br>
 
-              <br><br>
+                <strong>Technologies utilisées :</strong><br>
+                Wireshark · Traceroute · diagrams.net · DHCP · DNS · Linux · Windows
 
-              <strong>Preuves / Résultats :</strong><br>
-              Captures d’écran annotées, schéma réseau détaillé et analyse du trafic Internet.
+                <br><br>
+
+                <strong>Preuves / Résultats :</strong><br>
+                Captures d’écran annotées, schéma réseau détaillé et analyse du trafic Internet.
+
+              </div>
+
             </div>
 
             <div class="proj-meta">
-              <div class="proj-techs">
-                Wireshark · Réseau · Analyse IP
+
+              <div class="proj-left">
+
+                <div class="proj-techs">
+                  Wireshark · Réseau · Analyse IP
+                </div>
+
+                <div class="project-buttons">
+
+                  <a href="sae12_rendu_1.pdf" target="_blank" class="project-btn">
+                    Voir le rapport 1
+                  </a>
+
+                  <a href="sae12_rendu_2.pdf" target="_blank" class="project-btn">
+                    Voir le rapport 2
+                  </a>
+
+                </div>
+
               </div>
 
-              <div class="proj-arrow">→</div>
+              <button class="proj-arrow" onclick="toggleProject(this)">→</button>
+
             </div>
 
           </div>
         </div>
+          <p id="no-project-message" style="display:none;" class="no-project">
+            Aucun projet pour le moment.
+          </p>
 
         <!-- Projet 2 -->
         <div class="proj-card" data-category="communication">
-
           <div class="proj-thumb thumb-mint">
             <img src="r111.jpg" class="proj-image" alt="Projet R111">
           </div>
@@ -413,44 +438,69 @@
               autour du rapport au temps, des habitudes quotidiennes
               et de la vie « à la française ».
 
-              <br><br>
+              <div class="proj-more">
 
-              <strong>Missions réalisées :</strong><br>
-              • Analyse du document de référence R111<br>
-              • Recherche et comparaison culturelle France/Malaisie<br>
-              • Travail collaboratif en binôme<br>
-              • Création d’un diaporama de présentation<br>
-              • Préparation et présentation orale devant la classe
+                <br>
 
-              <br><br>
+                <strong>Missions réalisées :</strong><br>
+                • Analyse du document de référence R111<br>
+                • Recherche et comparaison culturelle France/Malaisie<br>
+                • Travail collaboratif en binôme<br>
+                • Création d’un diaporama de présentation<br>
+                • Préparation et présentation orale devant la classe
 
-              <strong>Technologies / Outils :</strong><br>
-              Canva · PowerPoint · Recherche documentaire · Communication orale
+                <br><br>
 
-              <br><br>
+                <strong>Technologies / Outils :</strong><br>
+                Canva · PowerPoint · Recherche documentaire · Communication orale
 
-              <strong>Aperçu / Résultat :</strong><br>
-              Réalisation d’une présentation intitulée
-              <em>« La pause déjeuner en France et en Malaisie »</em>,
-              comparant les différences et ressemblances des habitudes
-              de pause déjeuner dans les deux pays.
+                <br><br>
+
+                <strong>Aperçu / Résultat :</strong><br>
+                Réalisation d’une présentation intitulée
+                <em>« La pause déjeuner en France et en Malaisie »</em>,
+                comparant les différences et ressemblances des habitudes
+                de pause déjeuner dans les deux pays.
+
+              </div>
+
             </div>
 
             <div class="proj-meta">
 
-              <div class="proj-techs">
-                Canva · Oral · Travail d’équipe · Culture
+              <div class="proj-left">
+
+                <div class="proj-techs">
+                  Canva · Oral · Travail d’équipe · Culture
+                </div>
+
+                <div class="project-buttons">
+
+                  <a href="r111_diapos.pdf" target="_blank" class="project-btn">
+                    Voir le diaporama
+                  </a>
+
+                  <a href="r111_diapos.pdf" download class="project-btn">
+                    Télécharger
+                  </a>
+
+                </div>
+
               </div>
 
-              <div class="proj-arrow">→</div>
+              <button class="proj-arrow" onclick="toggleProject(this)">→</button>
 
             </div>
 
           </div>
+
         </div>
 
         <!--Projet 3
         <div class="proj-card">
+          <p id="no-project-message" style="display:none;" class="no-project">
+            Aucun projet pour le moment.
+          </p>
           <div class="proj-thumb thumb-blush">
             <span class="proj-num">03</span>
             <div class="proj-thumb-icon">💻</div>
@@ -465,7 +515,7 @@
             <div class="proj-desc">Collecte, traitement et publication de données structurées sur un serveur distant via script automatisé.</div>
             <div class="proj-meta">
               <div class="proj-techs">HTML · Python · Markdown</div>
-              <div class="proj-arrow">→</div>
+              <button class="proj-arrow" onclick="toggleProject(this)">→</button>
             </div>
           </div>
         </div>
@@ -473,6 +523,9 @@
 
         <!-- Projet 4 — wide 
         <div class="proj-card wide">
+          <p id="no-project-message" style="display:none;" class="no-project">
+            Aucun projet pour le moment.
+          </p>
           <div class="proj-thumb thumb-butter">
             <span class="proj-num">04</span>
             <div class="proj-thumb-icon">📡</div>
@@ -487,7 +540,7 @@
             <div class="proj-desc">Décrivez ici un projet personnel ou de curiosité. Les projets perso sont particulièrement appréciés des recruteurs.</div>
             <div class="proj-meta">
               <div class="proj-techs">Technologies à compléter</div>
-              <div class="proj-arrow">→</div>
+              <button class="proj-arrow" onclick="toggleProject(this)">→</button>
             </div>
           </div>
         </div>
@@ -495,6 +548,9 @@
 
         <!-- Projet 5 
         <div class="proj-card">
+          <p id="no-project-message" style="display:none;" class="no-project">
+            Aucun projet pour le moment.
+          </p>
           <div class="proj-thumb thumb-sky">
             <span class="proj-num">05</span>
             <div class="proj-thumb-icon">📄</div>
@@ -508,7 +564,7 @@
             <div class="proj-desc">SAÉ, TP remarquable, collaboration… à vous de remplir avec une réalisation qui vous tient à cœur.</div>
             <div class="proj-meta">
               <div class="proj-techs">Outils à compléter</div>
-              <div class="proj-arrow">→</div>
+              <button class="proj-arrow" onclick="toggleProject(this)">→</button>
             </div>
           </div>
         </div>
@@ -544,9 +600,13 @@
   <div class="page" id="page-competences">
     <div class="page-content comp-layout">
       <div class="comp-intro">
-        <div class="section-tag">// Compétences BUT R&T</div>
-        <h2 class="page-title">Mes <span class="accent">Compétences</span></h2>
-        <p>Les trois compétences officielles du BUT R&T, développées à travers les cours, travaux pratiques et SAÉ réalisées depuis le début de ma formation.</p>
+        <h2 class="page-title comp-title">
+          Mes <span class="accent">Compétences</span>
+        </h2>
+
+        <p class="comp-text">
+          Grâce à mes projets académiques et personnels, j’ai acquis des compétences en réseaux, programmation et technologies informatiques. Chaque projet m’a permis de développer mon autonomie, ma capacité d’adaptation et mon esprit d’équipe.
+        </p>
       </div>
 
       <div class="comp-grid">
@@ -631,9 +691,46 @@
             <span class="pill pill-purple">Notion</span>
           </div>
         </div>
+      </div>
+
+    <!-- CERTIFICATIONS -->
+      <div class="cert-intro">
+        <h2 class="page-title cert-title">
+          Mes <span class="accent">Certifications</span>
+        </h2>
+      </div>
+
+      <div class="cert-grid">
+
+        <div class="certification-card">
+
+            <div class="cert-top">
+                <div class="cert-icon">🎓</div>
+                <h3>DELF B2</h3>
+            </div>
+
+            <p>Diplôme d'études en langue française, niveau B2.</p>
+
+            <a href="#" class="project-btn">Télécharger</a>
+
+        </div>
+
+        <div class="certification-card">
+
+            <div class="cert-top">
+                <div class="cert-icon">🏅</div>
+                <h3>SPM — 11A</h3>
+            </div>
+
+            <p>Diplôme malaisien équivalent au baccalauréat scientifique français.</p>
+
+            <a href="#" class="project-btn">Télécharger</a>
+
+        </div>
 
       </div>
-    </div>
+
+    </div> <!-- end comp-layout -->
 
     <div class="page-footer">
       <div class="footer-inner">

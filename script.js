@@ -9,7 +9,7 @@
     ring.style.left=rx+'px'; ring.style.top=ry+'px';
     requestAnimationFrame(animCursor);
   })();
-  document.querySelectorAll('a,button,.proj-card,.comp-card,.detail-card').forEach(el=>{
+  document.querySelectorAll('a,button,.proj-card,.comp-card,.detail-card,.certification-card').forEach(el=>{
     el.addEventListener('mouseenter',()=>{ cursor.style.transform='translate(-50%,-50%) scale(2)'; ring.style.transform='translate(-50%,-50%) scale(1.4)'; });
     el.addEventListener('mouseleave',()=>{ cursor.style.transform='translate(-50%,-50%) scale(1)'; ring.style.transform='translate(-50%,-50%) scale(1)'; });
   });
@@ -51,24 +51,52 @@
     });
   }
 
-  const filterButtons = document.querySelectorAll(".filter-btn");
+const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".proj-card");
+const noProjectMessage = document.getElementById("no-project-message");
 
 filterButtons.forEach(button => {
   button.addEventListener("click", () => {
+
     const filter = button.dataset.filter;
 
     filterButtons.forEach(btn => btn.classList.remove("active"));
     button.classList.add("active");
 
+    let visibleProjects = 0;
+
     projectCards.forEach(card => {
+
       const category = card.dataset.category;
 
       if (filter === "all" || category === filter) {
         card.style.display = "";
+        visibleProjects++;
       } else {
         card.style.display = "none";
       }
+
     });
+
+    if (visibleProjects === 0) {
+      noProjectMessage.style.display = "block";
+    } else {
+      noProjectMessage.style.display = "none";
+    }
+
   });
 });
+
+function toggleProject(button){
+
+  const card = button.closest(".proj-card");
+
+  card.classList.toggle("open");
+
+  if(card.classList.contains("open")){
+    button.textContent = "↑";
+  } else {
+    button.textContent = "→";
+  }
+
+}

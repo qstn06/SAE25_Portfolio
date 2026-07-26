@@ -401,8 +401,6 @@ nav {
   border-top: 1px solid var(--border);
 }
 
-.stat { }
-
 .stat-num {
   font-family: 'Syne', sans-serif; font-weight: 800; font-size: 2rem;
   color: var(--purple);
@@ -2113,4 +2111,13 @@ font-size: clamp(2.8rem, 4.5vw, 4rem);
 .scroll-top-btn:hover {
   background: var(--purple);
   transform: translateY(-3px);
+}
+
+#page-exp-candy {
+  background: #FCEDF2;
+}
+
+#page-exp-candy .exp-detail-cover {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }

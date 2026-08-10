@@ -525,9 +525,16 @@ nav {
 /* ════════════════════════════════
    PAGE 3 — PROJETS
 ════════════════════════════════ */
-#page-projects { background: #FDEEF2; }        /* light Pink (#F7B9C4) */
-#page-proj-1   { background: #FDEEF2; }        /* same as projects */
-#page-proj-2   { background: #FDEEF2; }        /* same as projects */
+#page-projects,
+#page-proj-1,
+#page-proj-2,
+#page-proj-3,
+#page-proj-4,
+#page-proj-5,
+#page-proj-6,
+#page-proj-7 {
+  background: #FDEEF2;
+}
 
 .projects-layout {
   flex: 1; padding: 52px 48px 40px;
@@ -2612,4 +2619,59 @@ iframe {
     left: 16px;
     bottom: 16px;
   }
+}
+
+/* ==================================================
+   PROJECT DETAIL PAGES — FULL WIDTH FOOTER
+================================================== */
+
+/* All project detail pages */
+#page-proj-1,
+#page-proj-2,
+#page-proj-3,
+#page-proj-4,
+#page-proj-5,
+#page-proj-6,
+#page-proj-7 {
+  background: #FDEEF2;
+  width: 100%;
+}
+
+/* Project information remains centered */
+#page-proj-1 .exp-detail-layout,
+#page-proj-2 .exp-detail-layout,
+#page-proj-3 .exp-detail-layout,
+#page-proj-4 .exp-detail-layout,
+#page-proj-5 .exp-detail-layout,
+#page-proj-6 .exp-detail-layout,
+#page-proj-7 .exp-detail-layout {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer takes the full browser width */
+#page-proj-1 .page-footer,
+#page-proj-2 .page-footer,
+#page-proj-3 .page-footer,
+#page-proj-4 .page-footer,
+#page-proj-5 .page-footer,
+#page-proj-6 .page-footer,
+#page-proj-7 .page-footer {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Footer content */
+#page-proj-1 .footer-inner,
+#page-proj-2 .footer-inner,
+#page-proj-3 .footer-inner,
+#page-proj-4 .footer-inner,
+#page-proj-5 .footer-inner,
+#page-proj-6 .footer-inner,
+#page-proj-7 .footer-inner {
+  width: 100%;
 }

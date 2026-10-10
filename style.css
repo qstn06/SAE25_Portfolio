@@ -2677,10 +2677,11 @@ iframe {
 }
 
 /* Gallery column options */
-.exp-detail-gallery.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.exp-detail-gallery.cols-2 { grid-template-columns: repeat(4, 1fr); }
 .exp-detail-gallery.cols-5 { grid-template-columns: repeat(5, 1fr); }
  
 @media (max-width: 900px) {
   .exp-detail-gallery.cols-5 { grid-template-columns: repeat(2, 1fr); }
+    .exp-detail-gallery.cols-2 { grid-template-columns: repeat(2, 1fr); }
 }
 
